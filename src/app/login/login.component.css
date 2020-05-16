@@ -1,0 +1,42 @@
+
+.card {
+  height: 370px;
+  width: 500px;
+  margin-top: 10%;
+  margin: 20% auto;
+  background-color: rgba(0,0,0,0.5) !important;
+}
+.card-header h3{
+color: white;
+}
+
+.input-group-prepend span{
+  width: 50px;
+  background-color: orange;
+  color: black;
+  border:0 !important;
+  }
+
+  .login_btn{
+    color: black;
+    background-color: orange;
+    width: 100px;
+    }
+    
+    .login_btn:hover{
+    color: black;
+    background-color: white;
+    }
+   .form-group {
+     padding: 10px;
+   }
+
+   .error{
+     color: red;
+  
+   }
+   .fieldV {
+     color: orange;
+     margin: 20px;
+   }
+    

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "testingAngular8"
+    }
+  },
+  "defaultProject": "testingAngular8",
+  "cli": {
+    "analytics": false
+  }
 }

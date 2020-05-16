@@ -1,0 +1,7 @@
+.container {
+  margin: 0 auto;
+  box-shadow: 2px 2px 12px 5px gray;
+  border-radius: 0px 0px 15px 15px;
+  height: 100vh;
+  border: 2px solid transparent;
+}
