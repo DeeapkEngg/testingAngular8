@@ -15,7 +15,7 @@ export class MockComponent {
 
 }
 
-describe('LoginComponent', () => {
+fdescribe('LoginComponent', () => {
   let component: LoginComponent;
   let fixture: ComponentFixture<LoginComponent>;
   beforeEach(async(() => {
@@ -92,11 +92,14 @@ describe('LoginComponent', () => {
           expect(component.loginSuccess).toHaveBeenCalled();
         }));
 
-        it('should set token in localstorage', () => {
+        fit('should set token in localstorage', fakeAsync(() => {
+          spyOn(component, 'loginSuccess').and.callThrough();
+          spyOn(component.router, 'navigate').and.callThrough();
           component.checkDetails();
+          tick();
           const token = localStorage.getItem('token');
           expect(token).toBe('123');
-        });
+        }));
 
         it('should redirect to home page', fakeAsync(() => {
           spyOn(component.router, 'navigate').and.callThrough();
